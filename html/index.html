@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
     <title>My Portfolio</title>
     <link href="../src/output.css" rel="stylesheet" />
   </head>
@@ -29,7 +31,7 @@
                 <a href="#contact">Contact</a>
               </li>
             </ul>
-            <span> 1 </span>
+            <!-- <span> 1 </span> -->
             <div
               id="hamburger"
               class="space-y-1 md:hidden lg:hidden cursor-pointer py-5 px-5 z-20"
@@ -52,12 +54,12 @@
       </header>
     </div>
     <!-- about me -->
-    <div>
-        <div class="container mx-auto py-40 flex gap-2">
+    <div class="px-10">
+        <div class="container mx-auto py-40 flex flex-col lg:flex-row items-center gap-20">
             <!-- Left -->
-                <div class="">
+                <div class="relative">
                     <div class="  overflow-hidden ">
-                        <img class="w-[50%] rounded-3xl" src="img/profile pic.png">
+                        <img class="w-[55%] sm:items-center rounded-3xl" src="img/profile pic.png">
                     </div>
                 </div>
             <!-- Right -->
@@ -67,6 +69,14 @@
                     I am a software engineer with a passion for building beautiful and
                     functional websites and applications.
                     </p>
+                    <div class="">  
+                        <button type="button" 
+                    class="text-white bg-red-300 hover:bg-red-200 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-red-300 dark:hover:bg-red-200 focus:outline-none dark:focus:ring-red-400"><i class='bx bx-download'></i> CV</button>
+
+                    <button type="button" 
+                    class="text-white bg-red-300 hover:bg-red-200 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-red-300 dark:hover:bg-red-200 focus:outline-none dark:focus:ring-red-400"><i class='bx bxl-github'></i> GitHub</button>
+
+                    </div>
             </div>
             
         </div>
@@ -463,4 +473,6 @@
   <script type="text/javascript" src="../js/app.js">
     console.log("test test")
   </script>
+   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
 </html>
